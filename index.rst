@@ -892,7 +892,7 @@ CSS のスタイル指定にはいくつかの種類があります.
 
 .. code-block:: html
 
-   <p style="color:blue" />
+   <p bgcolor="blue" />
 
 2, 3 の場合は対象となる HTML 要素に直接スタイルが書かれているので, 要素とスタイルのマッチは簡単です. 
 
@@ -1162,7 +1162,7 @@ The canvas
 
 `CSS2 の仕様によると <http://www.w3.org/TR/CSS21/intro.html#processing-model>`_ , canvas は "the space where the formatting structure is rendered." (形式的な構造をレンダリングする場所) と定義されています. つまりブラウザがコンテンツを描画するスペースということです. キャンバスは無限の大きさを持っていますが, ブラウザは viewport の大きさに応じてその大きさを決めます.
 
-`CSS2 仕様の zindex の節 <http://www.w3.org/TR/CSS2/zindex.html>`_ によると, キャンバスが別の要素の中に定義されている場合, キャンバスは透明になり, そうでない場合はブラウザのデフォルトの色になります.
+`CSS2 仕様の zindex の節 <http://www.w3.org/TR/CSS2/zindex.html>`_ によると, キャンバスが別のキャンバスの中に定義されている場合, キャンバスは透明になり, そうでない場合はブラウザのデフォルトの色になります.
 
 CSS Box model
 **************************************************************
