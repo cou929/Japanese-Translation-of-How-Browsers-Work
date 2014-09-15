@@ -1,0 +1,17 @@
+language: python
+python:
+- '2.7'
+install: pip install -q -r requirements.txt
+script: sphinx-build -nW -b html -d _build/doctrees . _build/html
+deploy:
+  provider: s3
+  access_key_id:
+    secure: HSVCR+bCRID92I2fvQoCewbMkCIfI5tsl3K665t2cXwjkeRE0fXgLL3Z7RlFDIqyQeiGgMTB60kZ86YVeaaRtdmQ2HxMCzjdYraAw4FRhPwrmApGBWKkenmAYR1In+W8YOSJyY8YIqKw1T1rZYB8guU3PKVxDnc+wPQlBLWYK6k=
+  secret_access_key:
+    secure: IZzHhTekx3rHQTkaf4LpnPKH9n6hxrFMM4xNccf2BlxgvVPxBLdOrjCDESw/tpcSst9uwQTzuloKPlWbePepsQ0s+GunjWKa4vjhhC2GTVOKJcoMgiORYk/IxQPNeE2uKVHsxNgik1AgIDHyZ6YHAuyEqnmHIk8vMOyz/EsHT94=
+  bucket: cou929.nu
+  skip_cleanup: true
+  endpoint: cou929.nu.s3-website-ap-northeast-1.amazonaws.com
+  region: ap-northeast-1
+  local-dir: _build/html/
+  upload-dir: docs/how-browsers-work
