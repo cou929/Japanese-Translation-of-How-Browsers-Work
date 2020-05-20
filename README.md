@@ -6,3 +6,7 @@ Unoficial Japanese translation of [How Browsers Work: Behind the Scenes of Moder
 by Tali Garsiel (author) and Paul Irish (editor).
 
 Built document: http://cou929.nu/docs/how-browsers-work/
+
+## Deploy
+
+You must sync _build/html manually in this time.
